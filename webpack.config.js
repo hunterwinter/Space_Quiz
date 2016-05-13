@@ -3,8 +3,8 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: {
-        main: './src/main.jsx',
-        'main-jquery': './src/main-jquery.js'
+        main: './src/script/main.jsx',
+        
     },
     output: {
         filename: '[name].js',
@@ -13,9 +13,10 @@ module.exports = {
     devtool: '#source-map',
     devServer: {
       watch:true,
+      historyApiFallback: true,
       inline: true,
       host: '0.0.0.0',
-      port: '3000',
+      port: '8888',
       watchOptions: {
             aggregateTimeout: 300,
             poll: true

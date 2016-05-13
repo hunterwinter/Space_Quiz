@@ -1,0 +1,8 @@
+// Mixins
+
+@mixin desktop {
+  @media all and (min-width: $desktop-width) {
+    @content;
+  }
+}
+/////////////////
