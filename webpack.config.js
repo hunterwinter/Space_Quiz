@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: {
-        main: './src/script/main.jsx',
+        main: './src/main.jsx',
         
     },
     output: {
