@@ -4,7 +4,7 @@ export default class Timer2 extends React.Component {
     constructor(props){
 		  super(props);
 		  this.state = {
-			secondsElapsed: 8
+			secondsElapsed: 1
 		}
 	}
   	_tick() {

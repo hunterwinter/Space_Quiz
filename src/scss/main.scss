@@ -1,23 +1,17 @@
-
-@import 'reset';
-
 @import 'font-face';
-
-
 
 html, body {
 	color: black;
 	display: flex;
 	width: 100vw;
 	font-family: 'open_sansbold';
-
 }
 
 h1 {
 	color: #c2c2c2;
 	letter-spacing: -10px;
     text-transform: uppercase;
-	font-size: 90px;
+	font-size: 75px;
 }
 
 p {
@@ -30,23 +24,23 @@ header {
 	display: flex;
 	justify-content: center;
 	align-self: center;
-	width: 10vw;
+	min-width: 130px;
 	color: #ffffff;
-	font-size: 100px;
+	font-size: 85px;
 }
 
 header h1 {
 	position: absolute;
-	top: 110px;
-	left: 38px;
+	top: 60px;
+	margin-left: 35px;
     transform: translateX(-75px) rotate(270deg);
 }
 
 .planet {
 	letter-spacing: 0.5rem;
-	height: 120px;
-	width: 120px;
-	background-image: url('/assets/images/space.jpeg');
+	height: 100px;
+	width: 100px;
+	background-image: url('/assets/images/planet_mars.jpeg');
 	background-size: cover;
 	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
@@ -54,11 +48,11 @@ header h1 {
 .fa-space-shuttle {
 	position: relative;
 	top: 3px;
-	left: -12px;
+	left: -10px;
 }
 
 .mars-app {
-	background-image: url('/assets/images/mars.jpg');
+	background-image: url('/assets/images/space.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-size: 16px;
@@ -95,11 +89,7 @@ button {
 	background-color: white;
 	margin: 80px;
 	padding: 40px 40px 0;
-
-
 }
-
-
 
 .clock {
     background: #222;
@@ -119,43 +109,42 @@ button {
 }
 
 @keyframes slidein {
+  
   from {
     margin-left: 100%;
     width: 200px; 
     text-align: left;
-    
   }
 
   75% {
     font-size: 300%;
     margin-left: 25%;
-    width: 280px;
-    
-  }
+    width: 280px;  
+	}
 
   to {
     margin-left: 0%;
-    width: 200px;
-    text-align: left;
     padding: 0 0 0 16px;
+    text-align: left;
+    width: 200px;
   }
 }
 
 
 .quiz-input {
 	height: 80px;
-    display: flex;
     align-items: flex-end;
+    display: flex;
 }
 
 input {
+	border-bottom: 1px solid black;
+	border: none;
 	font-family: 'open_sanslight';
 	font-size: 30px;
-	width: 100vw;
 	height: 30px;
 	outline: none;
-	border: none;
-	border-bottom: 1px solid black;
+	width: 100vw;
 }
 
 .button-container {
@@ -166,14 +155,22 @@ input {
 	display: none;
 }
 
+
 .accepted,
 .rejected {
-	opacity: 0;
-    animation: pulse 1s 3s 10;
 	background-color: #66CC88;
+	height: 100%;
+	opacity: 0;
+	width: 100%;
+    animation: pulse 1s 3s 10;
 }
 
-*@keyframes pulse {
+.rejected {
+	background-color: #B0171F;
+}
+
+@keyframes pulse {
+  
   from {
     opacity: 0;
   }
@@ -186,7 +183,7 @@ input {
 	opacity: 0;
   }
 }
-*/
+
 .launch {
 	opacity: 0;
 	position: absolute;
@@ -195,7 +192,7 @@ input {
 	color: white;
 }
 
-*@keyframes launch {
+@keyframes launch {
   from {
   	opacity: 1;
 	top: 110%;
@@ -210,4 +207,3 @@ input {
 	left: 50%;
   }
 }
-*/

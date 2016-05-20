@@ -16,7 +16,7 @@ module.exports = {
       historyApiFallback: true,
       inline: true,
       host: '0.0.0.0',
-      port: '8888',
+      port: '3002',
       watchOptions: {
             aggregateTimeout: 300,
             poll: true

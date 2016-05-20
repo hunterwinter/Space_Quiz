@@ -8,7 +8,7 @@ const benQuestion = [
 	}, 
 
 	{
-		question: "Who was the best actor in the film /"Armageddon"/",
+		question: "Who was the best actor in the film \"Armageddon\"",
 		answer: ""
 	}, 
 
