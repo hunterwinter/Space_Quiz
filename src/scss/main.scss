@@ -40,7 +40,7 @@ header h1 {
 	letter-spacing: 0.5rem;
 	height: 100px;
 	width: 100px;
-	background-image: url('/assets/images/planet_mars.jpeg');
+	background: url('/assets/images/planet_mars.jpeg');
 	background-size: cover;
 	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
@@ -52,7 +52,10 @@ header h1 {
 }
 
 .mars-app {
-	background-image: url('/assets/images/space.jpg');
+	background: linear-gradient(
+      rgba(122, 0, 0, 0.45), 
+      rgba(122, 0, 0, 0.45)
+    ),url('/assets/images/space.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-size: 16px;
@@ -62,7 +65,7 @@ header h1 {
 	justify-content: center;
 }
 
-.flex {
+.comp-style {
 	align-self: center;
 }
 
@@ -120,7 +123,7 @@ button {
     font-size: 300%;
     margin-left: 25%;
     width: 280px;  
-	}
+	}	
 
   to {
     margin-left: 0%;
@@ -129,7 +132,6 @@ button {
     width: 200px;
   }
 }
-
 
 .quiz-input {
 	height: 80px;
@@ -155,14 +157,14 @@ input {
 	display: none;
 }
 
-
 .accepted,
 .rejected {
 	background-color: #66CC88;
-	height: 100%;
+	height: 100px;
 	opacity: 0;
-	width: 100%;
+	width: 110%;
     animation: pulse 1s 3s 10;
+    text-align: center;
 }
 
 .rejected {

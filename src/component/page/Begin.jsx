@@ -7,7 +7,7 @@ export default class Begin extends React.Component {
 	
 	render(){
 		return (
-			<div className="flex">
+			<div className="comp-style">
 				<button onClick={this._quiz.bind(this)}>begin evaluation</button>
 			</div>
 		)

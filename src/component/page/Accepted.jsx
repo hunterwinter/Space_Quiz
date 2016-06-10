@@ -4,7 +4,7 @@ import * as React from 'react';
 
 		render(){
 			return (
-				<div className="flex">
+				<div className="compt-style">
 					<h1 className="accepted">Accepted</h1>			
 					<i className="launch fa fa-space-shuttle fa-rotate-270" aria-hidden="true"></i>
 				</div>

@@ -6,5 +6,4 @@ import { Router, route, browserHistory, Redirect } from 'react-router';
 require('./scss/reset.scss');
 require('./scss/main.scss');
 
-
 ReactDOM.render(<App/>, document.getElementById('mars-app'));

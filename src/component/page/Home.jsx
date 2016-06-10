@@ -7,7 +7,7 @@ export default class Home extends React.Component {
 	
 	render(){
 		return (
-			<div className="flex">
+			<div className="comp-style">
 				<button onClick={this._beginTest.bind(this)}>Take Quiz</button>
 			</div>
 		)

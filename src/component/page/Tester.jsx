@@ -4,28 +4,27 @@ import Timer from '../Timer';
 const benQuestion = [
 	{	
 		question: "Do you get uncomfortable in confined spaces?", 
-		answer: ""
+		answer: "ben affleck"
 	}, 
 
 	{
 		question: "Who was the best actor in the film \"Armageddon\"",
-		answer: ""
+		answer: "ben affleck"
 	}, 
 
 	{
 		question: "Are you a Star Wars fan or a Star Trek fan?",
-		answer: ""
+		answer: "ben affleck"
 	}
 ]
-
 
 export default class TestPage extends React.Component {
 
 	constructor(props){
 		super(props);
-		this.state = { question: 0 , correct: 0}
-
-		
+		this.state = { 
+			question: 0, correct: 0}
+	
 	}
 
 _accepted(){
@@ -35,8 +34,9 @@ _rejected(){
 		this.props.navigate("rejected")
 	}
 
-_submitAnswer(){
-	if(this.refs.quizInput.value === "ben affleck"){
+_submitAnswer(e){
+		e.preventDefault();	
+	if(this.refs.quizInput.value === benQuestion[this.state.question].answer ){
 		this.setState({ correct: this.state.correct += 1});
 	}
 	if(this.state.question === 2 && this.state.correct >= 2) {
@@ -52,6 +52,10 @@ _submitAnswer(){
 	this.refs.quizInput.value = "";
 
 } 
+
+	componentDidMount() {
+     this.refs.quizInput.focus();  
+ }
 	
 	render(){
 		return (
